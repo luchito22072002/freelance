@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Freelance</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <img src="img/logo.png" alt="Logo de Luis Bendezu" class="logo">
+            <h1>¡Hola! Soy Luis Bendezu</h1>
+            <p>Diseñador y Desarrollador Freelance</p>
+            <a href="#proyectos" class="btn">Descubre mi trabajo</a>
+        </div>
+    </header>
+    
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <div class="sobre-mi-container"> 
+            <img src="img/perfil.jpg" alt="Tu Nombre" class="foto-sobre-mi"> 
+            <p>Soy un estudiante con poca experiencia en el diseño y desarrollo de soluciones web personalizadas. Me especializo en crear experiencias únicas para mis clientes.</p>
+        </div>
+    </section>
+    
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="servicios-container">
+            <div class="servicio">
+                <img src="img/diseño.jpg" alt="Diseño Web" class="servicio-img">
+                <h3>Diseño Web</h3>
+                <p>Creo diseños web atractivos y funcionales que se adaptan a las necesidades de cada cliente.</p>
+            </div>
+            <div class="servicio">
+                <img src="img/backend.png" alt="Desarrollo Frontend" class="servicio-img">
+                <h3>Desarrollo Frontend</h3>
+                <p>Desarrollo interfaces interactivas utilizando HTML, CSS y JavaScript para una experiencia de usuario excepcional.</p>
+            </div>
+            <div class="servicio">
+                <img src="img/sistemaweb.png" alt="Desarrollo de Sistemas Web" class="servicio-img">
+                <h3>Desarrollo de Sistemas Web</h3>
+                <p>Desarrollo sistemas web personalizados utilizando PHP y MySQL para satisfacer tus necesidades.</p>
+            </div>
+        </div>
+    </section>     
+
+    <section id="proyectos">
+        <h2>Mis Proyectos</h2>
+        <div class="proyectos-container">
+            <div class="proyecto">
+                <img src="img/ropa.jpg" alt="Proyecto 1">
+                <div class="proyecto-info">
+                    <h3>Sistema de Ventas</h3>
+                    <p>Un sistema de ventas de ropas con PHP y MySQL.</p>
+                    <a href="#" class="btn">Ver Proyecto</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/grass.jpg" alt="Proyecto 2">
+                <div class="proyecto-info">
+                    <h3>Sistema de Alquiler de Grass Sintético</h3>
+                    <p>Sistema para un grass sintético que tenía muchos campos deportivos con PHP y MySQL.</p>
+                    <a href="#" class="btn">Ver Proyecto</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/inventario.jpg" alt="Proyecto 3">
+                <div class="proyecto-info">
+                    <h3>Sistema de Inventario</h3>
+                    <p>Sistema de inventario para una tienda con PHP y MySQL.</p>
+                    <a href="#" class="btn">Ver Proyecto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades Destacadas</h2>
+        <div class="habilidades-container">
+            <div class="habilidad">
+                <h3>HTML & CSS</h3>
+                <div class="barra-progreso">
+                    <div class="progreso" style="width: 90%;"></div>
+                </div>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="habilidad">
+                <h3>JavaScript</h3>
+                <div class="barra-progreso">
+                    <div class="progreso" style="width: 50%;"></div>
+                </div>
+                <span class="porcentaje">50%</span>
+            </div>
+            <div class="habilidad"> 
+                <h3>PHP & MySQL</h3>
+                <div class="barra-progreso">
+                    <div class="progreso" style="width: 75%;"></div>
+                </div>
+                <span class="porcentaje">75%</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <div class="contacto-container"> 
+            <form action="enviar.php" method="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <img src="img/logo.png" alt="Logo de Luis Bendezu" class="logo">
+        <p>&copy; 2024 [Luis Bendezu]. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
