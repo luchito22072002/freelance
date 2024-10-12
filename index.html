@@ -116,20 +116,28 @@
     <section id="contacto">
         <h2>Contacto</h2>
         <div class="contacto-container"> 
-            <form action="enviar.php" method="POST">
+            <form id="contactForm">
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" name="nombre" required>
-    
+        
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
-    
+        
                 <label for="mensaje">Mensaje</label>
                 <textarea id="mensaje" name="mensaje" required></textarea>
-    
-                <button type="submit">Enviar</button>
+        
+                <button type="button" onclick="mostrarAlerta()">Enviar</button>
             </form>
         </div>
     </section>
+    
+    <script>
+    function mostrarAlerta() {
+        const nombre = document.getElementById('nombre').value;
+        alert('Gracias, ' + nombre + '! Tu mensaje ha sido recibido.');
+        document.getElementById('contactForm').reset();
+    }
+    </script>
     
     <footer>
         <img src="img/logo.png" alt="Logo de Luis Bendezu" class="logo">
